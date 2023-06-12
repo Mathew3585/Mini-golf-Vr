@@ -20,6 +20,7 @@ public class AddSpeedClub : MonoBehaviour
         previousPosition= transform.position;
         ClubCollider = GetComponent<Collider>();
         gameMananger = FindObjectOfType<GameMananger>();
+        FirstTap = true;
     }
 
     // Update is called once per frame

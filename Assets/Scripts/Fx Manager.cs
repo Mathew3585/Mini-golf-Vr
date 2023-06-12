@@ -4,6 +4,11 @@ using UnityEngine;
 
 public class FxManager : MonoBehaviour
 {
+    public GameObject CurrentTrail;
+    public GameObject CurrentFxGoal;
+
+    [Header("Trail")]
+    public GameObject TrailWhite;
     public GameObject TrailBleu;
     public GameObject TrailRouge;
     public GameObject TrailVert;
@@ -11,13 +16,13 @@ public class FxManager : MonoBehaviour
     public GameObject TrailViolet;
     public GameObject TrailRgb;
 
-
+    [Space(10)]
+    [Header("FX Goal")]
     public GameObject FxGoalConfetie;
 
 
     private void Awake()
     {
         DontDestroyOnLoad(gameObject);
-
     }
 }

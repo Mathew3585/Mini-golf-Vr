@@ -14,10 +14,8 @@ public class GameMananger : MonoBehaviour
     public Rigidbody ballRidgibody;
 
     public GameObject ArrowUi;
-    public GameObject Player;
-    public GameObject FxGoal;
-    public GameObject Trail;
-
+    public GameObject CanvasBall;
+    private GameObject Player;
 
     public int currentHitNuber = 0;
     private List<int> previousHitNumbers = new List<int>();
@@ -25,7 +23,6 @@ public class GameMananger : MonoBehaviour
     public TextMeshPro textMeshPro;
 
     private AddSpeedClub club;
-
 
     private void Awake()
     {
@@ -43,6 +40,7 @@ public class GameMananger : MonoBehaviour
         ballRidgibody.velocity = Vector3.zero;
         ballRidgibody.angularVelocity = Vector3.zero;
         textMeshPro.text = "";
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     // Update is called once per frame
@@ -50,7 +48,8 @@ public class GameMananger : MonoBehaviour
     {
         if(club.FirstTap)
         {
-            ArrowUi.transform.LookAt(Player.transform);
+            Vector3 direction = Player.transform.position - ArrowUi.transform.position;
+            CanvasBall.transform.rotation = Quaternion.Euler(0f, direction.y, 0f);
         }
     }
 

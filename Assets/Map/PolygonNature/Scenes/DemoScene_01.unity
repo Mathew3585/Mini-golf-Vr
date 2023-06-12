@@ -17391,9 +17391,6 @@ MonoBehaviour:
   - {fileID: 858719033}
   ballRidgibody: {fileID: 555711617}
   ArrowUi: {fileID: 6390210645777442316}
-  Player: {fileID: 0}
-  FxGoal: {fileID: 0}
-  Trail: {fileID: 0}
   currentHitNuber: 0
   textMeshPro: {fileID: 1925592735}
 --- !u!4 &544709458
@@ -29982,6 +29979,68 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 929517683}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &930904638
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 930904640}
+  - component: {fileID: 930904639}
+  m_Layer: 0
+  m_Name: Fx Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &930904639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930904638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873a61fd06875924f89024be9bedba84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentTrail: {fileID: 3407457257806194404, guid: a9024fed53f05834c82d8f3fb676db35,
+    type: 3}
+  CurrentFxGoal: {fileID: 0}
+  TrailWhite: {fileID: 3407457257806194404, guid: a9024fed53f05834c82d8f3fb676db35,
+    type: 3}
+  TrailBleu: {fileID: 301392386659740425, guid: 81c9e0379b5d4f943b689cb4f1018ce9,
+    type: 3}
+  TrailRouge: {fileID: 7411297881515298324, guid: 27cfab60bc8c1404faefc506a2d16169,
+    type: 3}
+  TrailVert: {fileID: 5345754068409295840, guid: 2413dca5681960e45acfe19a4b6a2aa8,
+    type: 3}
+  TrailJaune: {fileID: 6419713582038577469, guid: 1d0bd7911dfd2484c9fa55e475de51bc,
+    type: 3}
+  TrailViolet: {fileID: 7620258954517252336, guid: e319bb3ed17dad04cab5242a425abe96,
+    type: 3}
+  TrailRgb: {fileID: 4118895450616279088, guid: 718091f5edb2ea24c9fb678d220ef918,
+    type: 3}
+  FxGoalConfetie: {fileID: 0}
+--- !u!4 &930904640
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 930904638}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 95.61648, y: 0.94172055, z: 33.05339}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931431510
 GameObject:
   m_ObjectHideFlags: 0
@@ -68789,7 +68848,7 @@ GameObject:
   - component: {fileID: 2048268137}
   m_Layer: 0
   m_Name: XR Origin
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -72583,7 +72642,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6390210644819067423, guid: 4f9aa4fd83383f54dbca1c330ecee8c6, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4f9aa4fd83383f54dbca1c330ecee8c6, type: 3}
