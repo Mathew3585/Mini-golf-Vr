@@ -6,11 +6,14 @@ public class HoleComponent : MonoBehaviour
 {
 
     private GameMananger gameMananger;
+    private MoneyManager moneyManager;
     public string targetTag = "ball";
+    public int DropMoney;
 
     private void Awake()
     {
         gameMananger = FindObjectOfType<GameMananger>();
+        moneyManager = FindObjectOfType<MoneyManager>();
     }
 
 
@@ -18,6 +21,7 @@ public class HoleComponent : MonoBehaviour
     {
         if(other.CompareTag(targetTag))
         {
+            moneyManager.PlayerMoney += DropMoney;
             gameMananger.GotoNextHole();
         }
     }

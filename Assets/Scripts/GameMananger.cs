@@ -9,7 +9,11 @@ public class GameMananger : MonoBehaviour
 
     public List<Transform> startingPosition;
 
+
     public Rigidbody ballRidgibody;
+
+    public GameObject ArrowUi;
+    public GameObject Player;
 
 
     public int currentHitNuber = 0;
@@ -17,10 +21,21 @@ public class GameMananger : MonoBehaviour
 
     public TextMeshPro textMeshPro;
 
+    private AddSpeedClub club;
+
+
+    private void Awake()
+    {
+        club = FindObjectOfType<AddSpeedClub>();
+    }
+
+
     // Start is called before the first frame update
     void Start()
     {
         ballRidgibody.transform.position = startingPosition[currentHoleNumber].position;
+        ArrowUi.SetActive(true);
+        club.FirstTap = true;
         ballRidgibody.velocity = Vector3.zero;
         ballRidgibody.angularVelocity = Vector3.zero;
         textMeshPro.text = "";
@@ -29,14 +44,18 @@ public class GameMananger : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(club.FirstTap)
+        {
+            ArrowUi.transform.LookAt(Player.transform);
+        }
     }
 
     public void GotoNextHole()
     {
         currentHoleNumber++;
-
-        if(currentHoleNumber >= startingPosition.Count)
+        ArrowUi.SetActive(true);
+        club.FirstTap = true;
+        if (currentHoleNumber >= startingPosition.Count)
         {
             Debug.Log("We reached the end");
         }

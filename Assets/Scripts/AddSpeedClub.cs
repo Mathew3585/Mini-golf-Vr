@@ -12,6 +12,8 @@ public class AddSpeedClub : MonoBehaviour
     private Vector3 previousPosition;
     private GameMananger gameMananger;
 
+    public bool FirstTap;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +33,11 @@ public class AddSpeedClub : MonoBehaviour
     {
         if (other.CompareTag(targetTag))
         {
+            if (FirstTap)
+            {
+                gameMananger.ArrowUi.SetActive(false);
+                FirstTap = false;
+            }
             Vector3 collisonPosition = ClubCollider.ClosestPoint(other.transform.position);
             Vector3 collisonNoramlize = other.transform.position - collisonPosition;
 
