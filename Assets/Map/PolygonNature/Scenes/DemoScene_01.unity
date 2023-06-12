@@ -17392,6 +17392,8 @@ MonoBehaviour:
   ballRidgibody: {fileID: 555711617}
   ArrowUi: {fileID: 6390210645777442316}
   Player: {fileID: 0}
+  FxGoal: {fileID: 0}
+  Trail: {fileID: 0}
   currentHitNuber: 0
   textMeshPro: {fileID: 1925592735}
 --- !u!4 &544709458

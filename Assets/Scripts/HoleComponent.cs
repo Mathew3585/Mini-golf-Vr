@@ -21,6 +21,7 @@ public class HoleComponent : MonoBehaviour
     {
         if(other.CompareTag(targetTag))
         {
+            Instantiate(gameMananger.FxGoal, transform);
             moneyManager.PlayerMoney += DropMoney;
             gameMananger.GotoNextHole();
         }

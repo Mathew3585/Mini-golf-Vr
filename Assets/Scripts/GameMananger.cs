@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class GameMananger : MonoBehaviour
 {
+
     private int currentHoleNumber = 0;
 
     public List<Transform> startingPosition;
@@ -14,6 +15,8 @@ public class GameMananger : MonoBehaviour
 
     public GameObject ArrowUi;
     public GameObject Player;
+    public GameObject FxGoal;
+    public GameObject Trail;
 
 
     public int currentHitNuber = 0;
@@ -26,6 +29,7 @@ public class GameMananger : MonoBehaviour
 
     private void Awake()
     {
+        DontDestroyOnLoad(gameObject);
         club = FindObjectOfType<AddSpeedClub>();
     }
 
