@@ -17395,6 +17395,7 @@ MonoBehaviour:
   ballRidgibody: {fileID: 555711617}
   ArrowUi: {fileID: 6390210645777442316}
   CanvasBall: {fileID: 1909261320}
+  Player: {fileID: 0}
   currentHitNuber: 0
   textMeshPro: {fileID: 1925592735}
 --- !u!4 &544709458
@@ -27601,7 +27602,7 @@ GameObject:
   m_Component:
   - component: {fileID: 862335476}
   m_Layer: 0
-  m_Name: SpawnClubRight
+  m_Name: SpawnClubLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -30060,7 +30061,13 @@ MonoBehaviour:
     type: 3}
   TrailRgb: {fileID: 4118895450616279088, guid: 718091f5edb2ea24c9fb678d220ef918,
     type: 3}
-  FxGoalConfetie: {fileID: 0}
+  FxGoalConfetieWhite: {fileID: 0}
+  FxGoalConfetieRed: {fileID: 0}
+  FxGoalConfetieBlue: {fileID: 0}
+  FxGoalConfetieGreen: {fileID: 0}
+  FxGoalConfetieYellow: {fileID: 0}
+  FxGoalConfetieViolet: {fileID: 0}
+  FxGoalConfetieRgb: {fileID: 0}
 --- !u!4 &930904640
 Transform:
   m_ObjectHideFlags: 0
