@@ -4046,51 +4046,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &138275176
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 138275178}
-  - component: {fileID: 138275177}
-  m_Layer: 0
-  m_Name: MoneyManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &138275177
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138275176}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8f35659518b7c7441a5d2773e6afe99a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerMoney: 0
---- !u!4 &138275178
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 138275176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &142177425
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30015,74 +29970,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 929517683}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &930904638
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 930904640}
-  - component: {fileID: 930904639}
-  m_Layer: 0
-  m_Name: Fx Manager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &930904639
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930904638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 873a61fd06875924f89024be9bedba84, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CurrentTrail: {fileID: 3407457257806194404, guid: a9024fed53f05834c82d8f3fb676db35,
-    type: 3}
-  CurrentFxGoal: {fileID: 0}
-  TrailWhite: {fileID: 3407457257806194404, guid: a9024fed53f05834c82d8f3fb676db35,
-    type: 3}
-  TrailBleu: {fileID: 301392386659740425, guid: 81c9e0379b5d4f943b689cb4f1018ce9,
-    type: 3}
-  TrailRouge: {fileID: 7411297881515298324, guid: 27cfab60bc8c1404faefc506a2d16169,
-    type: 3}
-  TrailVert: {fileID: 5345754068409295840, guid: 2413dca5681960e45acfe19a4b6a2aa8,
-    type: 3}
-  TrailJaune: {fileID: 6419713582038577469, guid: 1d0bd7911dfd2484c9fa55e475de51bc,
-    type: 3}
-  TrailViolet: {fileID: 7620258954517252336, guid: e319bb3ed17dad04cab5242a425abe96,
-    type: 3}
-  TrailRgb: {fileID: 4118895450616279088, guid: 718091f5edb2ea24c9fb678d220ef918,
-    type: 3}
-  FxGoalConfetieWhite: {fileID: 0}
-  FxGoalConfetieRed: {fileID: 0}
-  FxGoalConfetieBlue: {fileID: 0}
-  FxGoalConfetieGreen: {fileID: 0}
-  FxGoalConfetieYellow: {fileID: 0}
-  FxGoalConfetieViolet: {fileID: 0}
-  FxGoalConfetieRgb: {fileID: 0}
---- !u!4 &930904640
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 930904638}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 95.61648, y: 0.94172055, z: 33.05339}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &931431510
 GameObject:
   m_ObjectHideFlags: 0
@@ -32955,6 +32842,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1029862398}
   - component: {fileID: 1029862397}
+  - component: {fileID: 1029862400}
+  - component: {fileID: 1029862399}
   m_Layer: 0
   m_Name: PlayerParamterManager
   m_TagString: Untagged
@@ -32989,8 +32878,64 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029862399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029862396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f35659518b7c7441a5d2773e6afe99a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerMoney: 0
+--- !u!114 &1029862400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029862396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873a61fd06875924f89024be9bedba84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  CurrentTrail: {fileID: 3407457257806194404, guid: a9024fed53f05834c82d8f3fb676db35,
+    type: 3}
+  CurrentFxGoal: {fileID: 0}
+  TrailWhite: {fileID: 3407457257806194404, guid: a9024fed53f05834c82d8f3fb676db35,
+    type: 3}
+  TrailBleu: {fileID: 301392386659740425, guid: 81c9e0379b5d4f943b689cb4f1018ce9,
+    type: 3}
+  TrailRouge: {fileID: 7411297881515298324, guid: 27cfab60bc8c1404faefc506a2d16169,
+    type: 3}
+  TrailVert: {fileID: 5345754068409295840, guid: 2413dca5681960e45acfe19a4b6a2aa8,
+    type: 3}
+  TrailJaune: {fileID: 6419713582038577469, guid: 1d0bd7911dfd2484c9fa55e475de51bc,
+    type: 3}
+  TrailViolet: {fileID: 7620258954517252336, guid: e319bb3ed17dad04cab5242a425abe96,
+    type: 3}
+  TrailRgb: {fileID: 4118895450616279088, guid: 718091f5edb2ea24c9fb678d220ef918,
+    type: 3}
+  FxGoalConfetieWhite: {fileID: 3987891938226493425, guid: 0b8ab11b9e7b0654bb5622760d413c12,
+    type: 3}
+  FxGoalConfetieRed: {fileID: 1929026216553783452, guid: 1f4eb712012976a408f28ecddbc4ed3b,
+    type: 3}
+  FxGoalConfetieBlue: {fileID: 2025888260968713086, guid: 36d1b38e4adeeef4a965fff21eef97cc,
+    type: 3}
+  FxGoalConfetieGreen: {fileID: 7301122168827478544, guid: 452ce707479b351499f762229558b8cd,
+    type: 3}
+  FxGoalConfetieYellow: {fileID: 3234136285705637114, guid: 84cd85c9da1879e4d958495d46c81546,
+    type: 3}
+  FxGoalConfetieViolet: {fileID: 2030185929152768983, guid: 2d824cdf0d8325444845de9948c33225,
+    type: 3}
+  FxGoalConfetieRgb: {fileID: 8528970172196809817, guid: aa936d6b99319b448a331bcf296b1d56,
+    type: 3}
 --- !u!1001 &1029911346
 PrefabInstance:
   m_ObjectHideFlags: 0
